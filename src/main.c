@@ -37,8 +37,8 @@ int shell_num_builtins()
 /* function for cd shell builtin*/
 int shell_cd(char **args)
 {
-	char home_path[] = "/home/ch4tic/";
-	if(args[1] == NULL)
+	char home_path[] = "test"; /* CHANGE THIS */
+ 	if(args[1] == NULL)
 	{
 		chdir(home_path);
 	}else
@@ -198,8 +198,8 @@ char **shell_split_line(char *line)
 void shell_loop(void)
 {
 	/* set your system information like user and hostname*/
-	char username[] = "ch4tic"; 
-	char hostname[] = "hangfire";
+	char username[] = "test";  /* CHANGE THIS */
+	char hostname[] = "test"; /* CHANGE THIS*/
 
 	char *line; 
 	char **args; 
